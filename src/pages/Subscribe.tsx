@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Logo } from "../components/Logo";
 import { useMyMutationMutation } from "../graphql/generated";
+import imgUrl from '../../src/assets/Group.png';
 
 
 export function Subscribe() {
@@ -69,7 +70,7 @@ export function Subscribe() {
                         </form>
                     </div>
                 </div>
-                <img src="/src/assets/Group.png" alt="" className="mt-10 max-w-[95%] sm:max-w-[100%]" />
+                <img src={imgUrl} alt="" className="mt-10 max-w-[95%] sm:max-w-[100%]" />
             </div>
             <Footer/>
         </>
